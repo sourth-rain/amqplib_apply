@@ -3,4 +3,4 @@
 B系统将结果返回给A系统，A系统再将结果返回给浏览器。
 
 
-实现功能：
+B系统github地址：https://github.com/sourth-rain/amqplib_apply_server
