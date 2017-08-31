@@ -1,38 +1,35 @@
 {
-    "development": {
-      "dataBase": {
-          "database": "haiTong_sync",
-          "host": "localhost",
-          "username": "root",
-          "password": "",
-          "dialect": "mysql",
-          "isolationLevel": "READ COMMITTED"
-      },
-      "mq":{
-        "host":"localhost",
-        "user":"guest",
-        "password":"guest"
-      },
-      "appId":"d9e640334196",
-      "port": 31100,
-      "announcementResUrl":"http://localhost:9001",
-      "totalGetCount":1000,
-      "cronJobCount":100
+  "development": {
+    "dataBase": {
+        "database": "haiTong_sync",
+        "host": "localhost",
+        "username": "root",
+        "password": "",
+        "dialect": "mysql",
+        "isolationLevel": "READ COMMITTED"
     },
-    "production": {
-      "dataBase": {
-          "database": "haiTong_sync",
-          "host": "",
-          "username": "root",
-          "password": "",
-          "dialect": "mysql",
-          "logging": false,
-          "isolationLevel": "READ COMMITTED"
-      },
-      "port": 31100,
-      "appId":"d9e640334196",
-      "announcementResUrl":"http://sync.stockalert.cn",
-      "totalGetCount":1000,
-      "cronJobCount":100
-    }
+    "mq":{
+      "host":"localhost",
+      "user":"guest",
+      "password":"guest"
+    },
+    "port": 31000
+  },
+  "production": {
+    "dataBase": {
+        "database": "haiTong_sync",
+        "host": "",
+        "username": "root",
+        "password": "",
+        "dialect": "mysql",
+        "logging": false,
+        "isolationLevel": "READ COMMITTED"
+    },
+    "mq":{
+      "host":"",
+      "user":"",
+      "password":""
+    },
+    "port": 31100
   }
+}
